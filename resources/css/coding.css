@@ -101,8 +101,10 @@ h2 {
     color: yellow;
 }
 
-.content ul a:visited {
-    color: red;
+
+
+.content ul a {
+    color: lightgoldenrodyellow;
 }
 
 .content.javascript {
