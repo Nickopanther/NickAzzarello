@@ -1,15 +1,15 @@
  /* Header, section, article, footer, and nav style */
-    header, section, article, footer, nav { 
+    header, section, article, footer, nav {
     display: block;
-} 
+}
 
 /* This style applies to the entire webpage */
 * {
     margin: 5px;
     padding: 0px;
-	background-color: darkgreen;
-    color: lightgoldenrodyellow; 
-    font-size: 24px;	
+	  background-color: darkgreen;
+    color: lightgoldenrodyellow;
+    font-size: 24px;
 }
 
 /* Body style */
@@ -28,7 +28,7 @@ header h1 {
     text-shadow: 5px 4px 3px black;
 }
 
-/* Social Media Links */      
+/* Social Media Links */
 #FindMe {
     text-align: center;
 }
@@ -179,7 +179,7 @@ article#inside {
 article#demo {
     width: 33%;
     float: left;
-    overflow: hidden; 
+    overflow: hidden;
 	display: block;
 }
 
