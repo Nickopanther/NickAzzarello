@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style type="text/css">
+        #content {
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            font-size: 200%;
+            padding-left: 1em;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+        }
+        h2 {
+            width: 10em;
+            border: 3px outset black;
+            background-color: lightgray;
+            text-align: center;
+            font-family: sans-serif;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px gray;
+        }
+    </style>
+    <script type="text/javascript"
+            src="jquery-3.1.1.min.js">
+    </script>
+    <script type = "text/javascript">
+        $(init);
+        function init() {
+            $("#content").hide();
+            $("#show").click(showContent);
+            $("#hide").click(hideContent);
+            $("#toggle").click(toggleContent);
+            $("#slideDown").click(slideDown);
+            $("#slideUp").click(slideUp);
+            $("#fadeIn").click(fadeIn);
+            $("#fadeOut").click(fadeOut);
+        }
+        function showContent() {
+            $("p").show();
+        }
+        function hideContent() {
+            $("#content").hide();
+        }
+        function toggleContent() {
+            $("#content").toggle();
+        }
+        function slideDown() {
+            $("#content").slideDown("medium");
+        }
+        function slideUp() {
+            $("#content").slideUp(500);
+        }
+        function fadeOut() {
+            $("#content").fadeOut("fast");
+        }
+        function fadeIn() {
+            $("#content").fadeIn("slow", present)
+        }
+        function present() {
+            alert("I'm here");
+        }
+    </script>
+</head>
+<body>
+    <h1>Hide and show</h1>
+    <h2 id="show">Show</h2>
+    <h2 id="hide">Hide</h2>
+    <h2 id="toggle">Toggle</h2>
+    <h2 id="slideDown">Slide Down</h2>
+    <h2 id="slideUp">Slide Up</h2>
+    <h2 id="fadeIn">Fade In</h2>
+    <h2 id="fadeOut">Fade Out</h2>
+    <p id="content">This is the content. It is hidden at first, but it is hidden and shown with jQuery.</p>
+</body>
+</html>

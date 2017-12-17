@@ -1,0 +1,214 @@
+ /* Header, section, article, footer, and nav style */
+    header, section, article, footer, nav { 
+    display: block;
+} 
+
+/* This style applies to the entire webpage */
+* {
+    margin: 5px;
+    padding: 0px;
+	background-color: darkgreen;
+    color: lightgoldenrodyellow; 
+    font-size: 24px;	
+}
+
+/* Body style */
+body {
+	width: 95%;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+
+/* H1 Header style */
+header h1 {
+    font: 50pt "Comic Sans MS", sans-serif;
+    color: yellow;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 5px 4px 3px black;
+}
+
+/* Social Media Links */      
+#FindMe {
+    text-align: center;
+}
+
+#FindMe img {
+    height: 100px;
+    width: 100px;
+}
+/* Navigation list style */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: red;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    line-height: 30px;
+    background-color: red;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px 2px black;
+    background-color: red;
+}
+
+/* Navigation list drop down style */
+nav ul a:hover {
+    background-color:red;
+    color: yellow;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    display:none;
+}
+
+nav ul li:hover ul {
+    display:block;
+}
+
+/* H2 style */
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Figure style */
+section#me figure {
+    display: inline-block;
+    margin: 20px;
+    float: left;
+}
+
+/* Figcaption style */
+figcaption {
+    text-align: center;
+    font-size: 17px;
+}
+
+figcaption em {
+    font-size: 17px;
+}
+
+
+/* Image style */
+img {
+    vertical-align: text-top;
+    height: 300px;
+}
+
+/* Section style */
+section {
+   margin-top: 20px;
+}
+
+section#me h3, p {
+    text-align: left;
+}
+
+/* Style setup for the videos and information */
+section article h4 {
+   margin: 0px 0px 15px 0px;
+   font-weight: normal;
+   text-align: center;
+   color:  white;
+   background-color: blue;
+
+   -moz-border-radius left: 30px;
+   -webkit-border-top-left-radius: 30px;
+   border-top-left-radius: 30px;
+
+   -moz-border-top-right-radius: 30px;
+   -webkit-border-top-right-radius: 30px;
+   border-top-right-radius: 30px;
+   font-size: 1.2em;
+   line-height: 2em;
+}
+
+h3 {
+    text-align: center;
+}
+
+article {
+   background-color: yellow;
+   -moz-border-radius:  30px;
+   -webkit-border-radius:  30px;
+   border-radius: 30px;
+   margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+article p {
+    font-size: 0.9em;
+    margin: 15px;
+    padding: 20px;
+    background-color: yellow;
+    color: mediumblue;
+    text-align: left;
+}
+
+article#tc {
+    width: 32%;
+    float: left;
+    overflow: hidden;
+    display: block;
+}
+
+article#inside {
+    width: 31%;
+    float: left;
+    overflow: hidden;
+    display: block;
+}
+
+article#demo {
+    width: 33%;
+    float: left;
+    overflow: hidden; 
+	display: block;
+}
+
+/* Special highlight style for Royals and Phils */
+#baseball a:hover {
+    color: red;
+}
+
+#royals a:hover {
+    color: blueviolet;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+}
+
+/* Back Up Top and Home Buttons style */
+#bottom {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+#bottom p{
+    text-align: center;
+}

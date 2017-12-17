@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+        
+        fieldset {
+            background-color: #AAAAFF;
+            width: 15em;
+            margin: auto
+        }
+
+        label {
+            clear: left;
+            float: left;
+            width: 7em;
+            text-align: left;
+            margin-right: .5em;
+        }
+
+        input {
+            float: left;
+            background-color: #CCCCFF;
+        }
+
+        input[type="submit"] {
+            float: left;
+            clear: both;
+            margin-left: 7em;
+            margin-top: 1em;
+            background-color: #0000CC;
+            color: #FFFFFF;
+        }
+        
+    </style>
+    <title>JSF 101 - JavaScript and Forms</title>
+    <script type="text/javascript">
+        <!--
+            function validateForm() {
+				
+				var firstName = document.forms["myForm"]["firstName"].value;
+				if(firstName == "") {
+					alert("First name must be filled out!");
+					
+					return false;  
+                }
+                
+                var middleName = document.forms["myForm"]["middleName"].value;
+                if(middleName == "") {
+                    alert("Middle name must be filled out!");
+                    
+                    return false;
+                }
+            
+                var lastName = document.forms["myForm"]["lastName"].value;
+                if(lastName == "") {
+                    alert("Last name must be filled out!");
+                    
+                    return false;
+                }
+            
+                var homeAddress = document.forms["myForm"]["homeAddress"].value;
+                if(homeAddress == "") {
+                    alert("Home address must be filled out!");
+                    
+                    return false;
+                }
+            
+                var phoneNumber = document.forms["myForm"]["phoneNumber"].value;
+                if(phoneNumber == "") {
+                    alert("Phone number must be filed out!");
+                    
+                    return false;
+                }
+        }
+        //-->
+    </script>
+</head>
+<body>
+    <h1>A Form to Fill Out your Information</h1>
+    <form action=" /action_page_post.php" name="myForm" method="post" onsubmit="return validateForm();">
+    <fieldset>
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" /> <br />
+        <label for="middleName">Middle Name: </label>
+        <input type="text" name="middleName" /> <br />
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" /> <br />
+        <label for="homeAddress">Home Address: </label>
+        <input type="text" name="homeAddress" /> <br />
+        <label for="phoneNumber">Phone Number: </label>
+        <input type="text" name="phoneNumber" /> <br />
+        <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+</html>

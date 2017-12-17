@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+        body {
+            background-color: blue;
+            color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>An if/else statement to call which while </h1>
+    <div id="answer"></div>
+    <script>
+        var table = 3;
+        var operator = "addition";
+        var i = 1;
+        var msg ="";
+        
+        if (operator == "addition") {
+            while(i < 11) {
+                msg += "<h2 align='center'>" + i + " + " + table + " = " + (i + table) + "</h2>" + "<br />";
+                i++;
+            }
+        } else {
+            while(i < 11) {
+                msg += i + " x " + table + " = " + (i * table) + "<br />";
+                i++;
+            }
+        }
+        var el = document.getElementById("answer");
+        el.innerHTML = msg;
+    </script>
+</body>
+</html>

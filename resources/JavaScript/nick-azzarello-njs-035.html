@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            background-color:aqua;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested if/else statements</h1>
+    <script type="text/javascript">
+    <!--
+        // nested if/else statements using ==
+        
+        document.write("<h2>Nested if/else statements using ==</h2>");
+        
+        var firstName = "Nick";
+        var lastName = "Azzarello";
+        
+        if(firstName == "Nick") {
+            if(lastName == "Azzarello") {
+                document.write("Welcome " + firstName + " " + lastName + "!");
+            }
+        } else {
+            document.write("Sorry, I do not know who you are.");
+        }
+        document.write("<br />");
+        document.write("<br/ >");
+        
+        if(25 == 25) {
+            if(5 * 5) {
+                document.write("5 x 5 = 25")
+            }
+        } else {
+            document.write("Sorry, these two do not work.");
+        }
+        
+        document.write("<br />");
+        
+        document.write("<br />");
+        
+        function forStatement() {
+            for(var i = 1; i <= 10; i++) {
+                document.write(i + "<br />");
+            }
+        }
+        
+        if(49 == 49) {
+            if(7 * 7) {
+               forStatement();
+            }
+        } else {
+            document.write("Sorry, we cannot call your function.");
+        }
+        document.write("<br />");
+        
+        function getTheDate() {
+           var rightNow = new Date();
+           return firstName + ", today's date is " + rightNow.toDateString();
+       }
+        if(firstName == "Nick") {
+            if(getTheDate == getTheDate) {
+                document.write(getTheDate());
+            }
+        } else {
+            document.write("Sorry we cannot access the date for you.");
+        }
+       
+        document.write("<br />");
+        
+        document.write("<br />");
+        
+        var month = "September";
+        var day = 15;
+        
+        if(month == "September") {
+            if(day == 15) {
+                document.write("Happy Birthday!");
+            }
+        } else {
+            document.write("Sorry it is not your birthday");
+        }
+        
+        // nested if/else statements using !=
+        
+        document.write("<h2>Nested if/else statements using !=</h2>");
+        
+        document.write("<br />");
+        
+        if(firstName != "Nick") {
+            if(lastName != "Azzarello") {
+                document.write("Hello Nick Azzarello");
+            }
+        } else {
+            document.write("Sorry, I cannot help you.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(25 != 2) {
+            if(25 != 5) {
+                document.write("Great job");
+            }
+        } else {
+            document.write("Wrong");
+        }
+        document.write("<br />");
+        document.write("<br />");
+        
+        function nextFor() {
+            for(var i = 5; i <= 25; i+=5) {
+                document.write(i + "<br />");
+            }
+        }
+        
+        if(nextFor != forStatement) {
+            if(5 != 3) {
+                nextFor();
+            }
+        } else {
+            forStatement();
+        }
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(month != "September") {
+            if(day != 15) {
+                document.write("Happy Birthday!")
+            } 
+        } else {
+            document.write("Sorry, it is not your birthday.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(5 != 5) {
+            if(month != month) {
+                nextFor();
+            }
+        } else {
+            document.write("Sorry, I cannot call this function for you.");
+        }
+        
+        document.write("<br />");
+        
+        // nested if/else statements using >
+        
+        document.write("<h2>Nested if/else statements using > </h2>");
+        
+        document.write("<br />");
+        
+        function fullYear() {
+        var date = new Date();
+        var year = date.getFullYear();
+            return "The year is " + year;
+        }
+        
+        if(2017 > 2015) {
+            if(2018 > 2016) {
+                document.write(fullYear());
+            }
+        } else {
+            document.write("Sorry, I do not know what year it is");
+        }
+        
+        document.write("<br />");
+        
+        document.write("<br />");
+        
+        function getTime() {
+            var date = new Date();
+            var time = date.toTimeString();
+                return "The time is " + time;
+        }
+        
+        if(5 > 4) {
+            if(7 > 3) {
+                document.write(getTime());
+            }
+        } else {
+            document.write("Sorry, I cannot get the time for you.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        function getDay() {
+            var today = new Date();
+            var day = today.toString();
+            return "Today is " + day;
+        }
+        
+        if(7 > 6) {
+            if(5 > 4) {
+                document.write(getDay());
+            }
+        } else {
+            document.write("Sorry, I do not know what day it is today.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        var temp = 32;
+        
+        if(temp > 15) {
+            if(temp > 24) {
+                document.write("It's cold");
+            }
+        } else {
+            document.write("It's warm");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(7 > 8) {
+            if(6 > 8) {
+                document.write("Congratulations!");
+            }
+        } else {
+            document.write("Sorry, this won't work.");
+        }
+        // Nested if/else statements using <
+        
+        document.write("<h2>Nested if/else statements using < </h2>");
+        
+        document.write("<br />");
+        
+        var temp = 32;
+        
+        if(temp < 60) {
+            if(temp < 80) {
+                document.write("It's hot");
+            }
+        } else {
+            document.write("It's not hot");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(7 < 49) {
+            if(4 < 16) {
+                document.write("You may proceed");
+            }
+        } else {
+            document.write("Yo may not proceed");
+        }
+         
+        document.write("<br />");
+        document.write("<br />");
+        
+        var pi = Math.PI;
+        
+        if(1 < pi) {
+            if(1 < 5) {
+                document.write(pi);
+            }
+        } else {
+            document.write("Sorry, this will not work.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(100 < 1000) {
+            if(77 < 88) {
+                document.write("That's right");
+            }
+        } else {
+            document.write("That's wrong");
+        }
+        document.write("<br />");
+        document.write("<br />");
+        
+        function countByTen() {
+            for(var i = 10; i <= 100; i+=10) {
+                document.write(i + "<br />");
+            }
+        }
+        
+        if(10 < 100) {
+            if(200 < 300) {
+                countByTen();
+            }
+        } else {
+            document.write("I cannot call your function.");
+        }
+        
+        document.write("<br />");
+        
+        
+        // Nested if/else statements using >=
+        
+        document.write("<h2>Nested if/else statements using >=</h2>");
+        
+        document.write("<br />");
+        
+        var pass = 50;
+        var score = 90;
+        
+        if(score >= pass) {
+            if(90 >= 50) {
+                document.write("Congratulations! You've passed!")
+            }
+        } else {
+            document.write("I'm sorry, you did not pass.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        
+        var temp = 32;
+        
+        if(temp >= 15) {
+            if(temp >= 24) {
+                document.write("It's cold");
+            }
+        } else {
+            document.write("It's warm");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        var num1 = 5+5;
+        var num2 = 7+7;
+        var total = num1 + num2;
+        
+        if(num1 >= num1) {
+            if(num2 >= num2) {
+                document.write(total);
+            }
+        } else {
+            document.write("Sorry, I cannot print your answer.");
+        }
+    
+        document.write("<br />");
+        document.write("<br />");
+        
+         if(88 >= 77) {
+            if(5 >= 5) {
+                document.write(getDay());
+            }
+        } else {
+            document.write("Sorry, I do not know what day it is today.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(55 >= 55) {
+            if(100 >= 100) {
+                document.write(getTime());
+            }
+        } else {
+            document.write("Sorry, I do not know what time it is");
+        }
+    
+        // if/else statements using <=
+        
+        document.write("<h2>Nested if/else statements using <= </h2>");
+        
+        document.write("<br />");
+        
+        var temp = 32;
+        
+        if(temp <= 60) {
+            if(temp <= 80) {
+                document.write("It's hot");
+            }
+        } else {
+            document.write("It's not hot");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+         if(10 <= 100) {
+            if(200 <= 300) {
+                countByTen();
+            }
+        } else {
+            document.write("I cannot call your function.");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+      
+        function countEven() {
+            for(var i = 0; i <= 20; i++) {
+                if(i%2 != 0) {
+                    continue;
+                }
+                document.write(i + " is an even number. <br />");
+            }
+        }
+        
+        if(countEven <= countEven) {
+            if(75 <= 77) {
+                countEven();
+            }
+        } else {
+            document.write("Sorry, this won't work");
+        }
+        document.write("<br />");
+        document.write("<br />");
+        
+        if(100 <= 1000) {
+            if(77 <= 88) {
+                document.write("That's right");
+            }
+        } else {
+            document.write("That's wrong");
+        }
+        
+        document.write("<br />");
+        document.write("<br />");
+        
+        var pi = Math.PI;
+        
+        if(1 <= pi) {
+            if(1 <= 5) {
+                document.write(pi);
+            }
+        } else {
+            document.write("Sorry, this will not work.");
+        }
+        
+        document.write("<br />");
+    //-->
+    </script>
+</body>
+</html>

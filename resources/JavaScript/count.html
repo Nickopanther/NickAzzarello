@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style type="text/css">
+        body {
+            background-color: blueviolet;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>For Loops</h1>
+    <form action="">
+        <fieldset>
+            <button type = "button"
+                    onclick = "count()" >
+                Count to Ten
+            </button>
+            <button type = "button" 
+                    onclick = "back()">
+            Count Backwards
+            </button>
+            <button type = "button"
+                    onclick = "byFive()">
+            Count by Fives
+            </button>
+        </fieldset>
+    </form>
+    <div id="output">Click a button to see something</div>
+    <script>
+       var output = document.getElementById("output");
+        
+        function count() {
+            output.innerHTML ="";
+            for  (var i = 1; i < 11; i++) {
+                output.innerHTML += i + "<br />";
+            }
+        }
+        
+        function back() {
+            output.innerHTML ="";
+            for (var i = 10; i > 0; i--) {
+                output.innerHTML +=  i + "<br />";
+            }
+        }
+        
+        function byFive() {
+            output.innerHTML = "";
+            for (var i = 5; i < 30; i+=5) {
+                output.innerHTML += i + "<br />";
+            }
+        }
+    </script>
+</body>
+</html>

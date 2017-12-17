@@ -1,0 +1,142 @@
+/* Header, section, and nav style  */
+header, section, nav { 
+    display: block;
+} 
+
+/* This style applies to the entire webpage */
+* {
+    margin: 5px;
+    padding: 0px;
+	background-color: darkgreen;
+    color: lightgoldenrodyellow;
+    font-size: 24px;
+}
+
+/* Body style */
+body {
+	width: 95%;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+
+/* H1 style of my name */
+h1 {
+    font: 50pt "Comic Sans MS", sans-serif;
+    color: yellow;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 5px 4px 3px black;
+}
+
+/* Social Media Links */      
+#FindMe {
+    text-align: center;
+}
+
+#FindMe img {
+    height: 100px;
+    width: 100px;
+}
+        
+/* Navigation list style */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: red;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    line-height: 30px;
+    background-color: red;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px 2px black;
+    background-color: red;
+}
+
+/* Navigation list drop down style */
+nav ul a:hover {
+    background-color: red;
+    color: yellow;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    display:none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* H2 heading style */
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.content ul {
+    list-style: none;
+    display: block;
+}
+
+.content a {
+    text-decoration: none;
+    
+}
+
+.content ul a:hover {
+    color: yellow;
+}
+
+.content ul a:visited {
+    color: red;
+}
+
+.content.javascript {
+    text-align: center
+}
+
+.content.jquery {
+    text-align: center;
+}
+
+.githublogo figure {
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Back Up Top and Home Buttons style */
+#bottom {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+#bottom p{
+    text-align: center;
+}

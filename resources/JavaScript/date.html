@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style>
+        body {
+            background-color: blue;
+        }
+        h1, h2 {
+            text-align: center;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Today's Date and Time</h1>
+    <script type = "text/javascript">
+        var rightNow = new Date();
+       function getTheDate() {
+           document.write("<h2>" + rightNow.toDateString() + "</h2>");
+       }
+        getTheDate();
+        
+        function getTime() {
+            document.write("<h2>" + rightNow.toTimeString() + "</h2>");
+        }
+        getTime();
+    </script>
+</body>
+</html>

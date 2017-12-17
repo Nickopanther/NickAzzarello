@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>if/else statements</h1>
+    <script type="text/javascript">
+    <!--
+        // if/else statements using ==
+        
+        document.write("<h2>if/else statements using ==</h2>");
+        
+        var subject = "history";
+        
+        if(subject == "history") {
+            document.write("Enjoy learning about the Civil War!");
+        } else {
+            document.write("Enjoy learning about science!");
+        }
+        
+        document.write("<br />");
+        
+        if(5 == 6) {
+            document.write("You may proceed");
+        } else {
+            document.write("What? 5 is not equal to 6");
+        }
+        
+        document.write("<br />");
+        
+        var sum = 7+7;
+        
+        if(sum == 7) {
+            document.write("You may proceed");
+        } else {
+            document.write("7 is not equal to 14");
+        }
+        document.write("<br />");
+        
+        if("history" == "science") {
+            document.write("These two subjects are not the same");
+        } else {
+            document.write("Enjoy learning");
+        }
+        
+        document.write("<br />");
+        if(5 == 5) {
+            document.write("These two numbers are equal to each other");
+        } else {
+            document.write("Forget about it");
+        }
+        
+        // if/else statements using !=
+        
+        document.write("<h2>if/else statements using !=</h2>");
+        
+        document.write("<br />");
+        
+        if(subject != "history") {
+            document.write("Enjoy learning about the Civil War!")
+        } else {
+            document.write("Enjoy learning about science!");
+        }
+        
+        document.write("<br />");
+        
+        if(35 != 25) {
+            document.write(35 + " is absolutely not equal to " + 25);
+        } else {
+            document.write("You may proceed");
+        }
+        
+        document.write("<br />");
+        
+        if(7 != 7) {
+            document.write("Hi");
+        } else {
+            document.write("bye");
+        }
+        
+        document.write("<br />");
+        
+        if(sum != 49) {
+            document.write("These two numbers are equal");
+        } else {
+            document.write("Forget about it");
+        }
+        
+        document.write("<br />");
+        
+        var name = "Nick";
+        
+        if(name != "Nick") {
+            document.write("Welcome");
+        } else {
+            document.write("Wrong person");
+        }
+        // if/else statements using >
+        
+        document.write("<h2>if/else statements using > </h2>");
+        
+        if(5 > 4) {
+            document.write("Proceed good sir");
+        } else {
+            document.write("Go away");
+        }
+        
+        document.write("<br />");
+        
+        if(4 > 7) {
+            document.write("Hi");
+        } else {
+            document.write("This is not right");
+        }
+        
+        document.write("<br />");
+        
+        if(5+7 > 6+1) {
+            document.write("12 is greater than 7");
+        } else {
+            document.write("This is not correct");
+        }
+        
+        document.write("<br />");
+        
+        if(7*7 > 4*6) {
+            document.write(7*7 + " is greater than " + 4*6);
+        } else {
+            document.write("Nevermind");
+        }
+        
+        document.write("<br />");
+        
+        if(15/3 > 24/4) {
+            document.write(24/4 + " is greater than " + 15/3);
+        } else {
+            document.write("This is not correct");
+        }
+        document.write("<br />");
+        
+        // if/else statements using <
+        
+        document.write("<h2>if/else statements using < </h2>");
+        
+        document.write("<br />");
+        
+        if(5*5 < 6*5) {
+            document.write("You may continue");
+        } else {
+            document.write("You may not continue");
+        }
+        
+        document.write("<br />");
+        
+        if(7*5 < 2*4) {
+            document.write("You may continue");
+        } else {
+            document.write("You may not continue");
+        }
+        
+        document.write("<br />");
+        
+        if(7+1 < 5) {
+            document.write("This is right");
+        } else {
+            document.write("This is not right");
+        }
+        
+        document.write("<br />");
+        
+        if(34 < 21) {
+            document.write("Correct");
+        } else {
+            document.write("Not correct");
+        }
+        
+        document.write("<br />");
+        
+        if(3 < 4) {
+            document.write("Correct");
+        } else {
+            document.write("Not correct");
+        }
+        
+        document.write("<br />");
+        
+        // if/else statements using >=
+        
+        document.write("<h2>if/else statements using >=</h2>");
+        
+        document.write("<br />");
+        
+        if(23 >= 1) {
+            document.write("This is correct");
+        } else {
+            document.write("This is not correct");
+        }
+        
+        document.write("<br />");
+        
+        if(5*4 >= 4*5) {
+            document.write("They are both the same");
+        } else {
+            document.write("Both of these are not correct");
+        }
+        
+        document.write("<br />");
+        
+        var num1 = 5;
+        var num2 = 6;
+        
+        if(num2 >= num1) {
+            document.write("Right");
+        } else {
+            document.write("Wrong");
+        }
+        
+        document.write("<br />");
+        
+        if(num1 >= num2) {
+            document.write("Yes");
+        } else {
+            document.write("No");
+        }
+        
+        document.write("<br />");
+        
+        if(num1 >= num1) {
+            document.write("Both are correct");
+        } else {
+            document.write("Both are incorrect");
+        }
+        // if/else statements using <=
+        
+        document.write("<h2>if/else statements using <= </h2>");
+        
+        if(25 <= 4) {
+            document.write("Continue");
+        } else {
+            document.write("Don't continue");
+        }
+        
+        document.write("<br />");
+        
+        if(35 <= 35) {
+            document.write("Go on");
+        } else {
+            document.write("Don't go on");
+        }
+        
+        document.write("<br />");
+        
+        if(100/10 <= 10/10) {
+            document.write("Right");
+        } else {
+            document.write("Wrong");
+        }
+        
+        document.write("<br />");
+        
+        if(num2 <= num2) {
+            document.write("Both are the same");
+        } else {
+            document.write("Both are not the same");
+        }
+        
+        document.write("<br />");
+        
+        if( 7 <= 8) {
+            document.write("Go");
+        } else {
+            document.write("Stop");
+        }
+    //-->
+    </script>
+</body>
+</html>
